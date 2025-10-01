@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotGrowHub - The Grower's Porch Swing on the Internet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Custom configuration for the CDN
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': {
+                            light: '#6B8E23', // OliveDrab
+                            DEFAULT: '#556B2F', // DarkOliveGreen
+                            dark: '#2E401E', // Darker Olive
+                        },
+                        'brand-brown': {
+                            light: '#D2B48C', // Tan
+                            DEFAULT: '#8B4513', // SaddleBrown
+                            dark: '#5C2E1A', // Darker Brown
+                        },
+                        'brand-cream': '#F5F5DC', // Beige
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* A little extra for the vibe */
+        body {
+            font-family: 'Georgia', serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1556928045-16f7f50be0f3?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-brown-dark">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h6M9 14h6m2 5l-1.06-1.06a5.5 5.5 0 00-7.78 0L5 19m14-9a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h1 class="text-2xl font-bold text-brand-green-dark">PotGrowHub</h1>
+            </div>
+            <a href="#waitlist" class="bg-brand-green hover:bg-brand-green-dark text-white font-bold py-2 px-4 rounded-full transition duration-300">Join the Circle</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white text-center py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">The Grower's Porch Swing on the Internet.</h2>
+                <p class="mt-4 text-xl md:text-2xl text-brand-cream drop-shadow-md">Real growers. Real wisdom. The digital smoke circle is coming soon.</p>
+                <a href="#waitlist" class="mt-8 inline-block bg-brand-green-light hover:bg-brand-green text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Get Early Access</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-brand-green-dark mb-12">Everything a Green Thumb Needs</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="text-center p-6 border-2 border-brand-green-light rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-2xl font-bold text-brand-green">GanjaGuru AI</h4>
+                        <p class="mt-2 text-brand-brown">Your cosmic outlaw budtender for strain recommendations, grow tips, and personalized guidance.</p>
+                    </div>
+                    <div class="text-center p-6 border-2 border-brand-green-light rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-2xl font-bold text-brand-green">Community & Trade</h4>
+                        <p class="mt-2 text-brand-brown">Swap seeds, clones, and stories. The back-porch smoke circle, now online.</p>
+                    </div>
+                    <div class="text-center p-6 border-2 border-brand-green-light rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-2xl font-bold text-brand-green">Interactive Design</h4>
+                        <p class="mt-2 text-brand-brown">Design custom bongs, rigs, and gear with AR previews and 3D print-on-demand.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 bg-brand-green-dark text-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h3 class="text-4xl font-bold">No Suits, No Fluff. Just Green.</h3>
+                <p class="mt-4 text-xl text-brand-cream">PotGrowHub is your digital grow shed. It’s a spot to track journals, learn new techniques, and share photos of your harvest like proud fishin’ stories. We're building a tribe, and you're invited.</p>
+            </div>
+        </section>
+
+        <!-- Waitlist Section -->
+        <section id="waitlist" class="py-20 bg-brand-cream">
+            <div class="container mx-auto px-6 text-center max-w-2xl">
+                <h3 class="text-3xl font-bold text-brand-green-dark">Ready to Join the Circle?</h3>
+                <p class="mt-2 text-lg text-brand-brown">Drop your email to get early access and be the first to know when we go live.</p>
+                <form class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-2">
+                    <input type="email" placeholder="you@growers.com" class="px-4 py-3 border-2 border-brand-green-light rounded-full w-full sm:w-80 focus:ring-2 focus:ring-brand-green focus:outline-none" required>
+                    <button type="submit" class="bg-brand-green hover:bg-brand-green-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 w-full sm:w-auto transform hover:scale-105">Join the Waitlist</button>
+                </form>
+                <p class="mt-4 text-sm text-brand-brown-light">We respect your privacy. No spam, ever.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-green-dark text-brand-cream py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 PotGrowHub. Keep it green, simple, and real.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
